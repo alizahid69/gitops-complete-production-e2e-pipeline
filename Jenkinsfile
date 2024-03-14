@@ -36,6 +36,7 @@ pipeline{
                 withCredentials([gitUsernamePassword(credentialsId: 'alizahid', gitToolName: 'Default')]){
                   sh "git push https://github.com/alizahid69/gitops-complete-production-e2e-pipeline main"
                 }
+            }
         }
     }
 }
